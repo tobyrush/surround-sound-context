@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Surround Sound Test</title>
+		<script type="text/javascript"src="sample.js"></script>
+		<script type="text/javascript" src="surround-sound-context.js"></script>
+	</head>
+	<body>
+		<button onclick="startOsc();">start</button>
+		
+		<button onclick="moveSound(0,0,0);">play in current location</button>
+		
+		<table>
+			<tr>
+				<td><button onclick="moveSound(-1,0,0);">move left</button></td>
+				<td><div id='xVal'>0</div></td>
+				<td><button onclick="moveSound(1,0,0);">move right</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="moveSound(0,-1,0);">move down</button></td>
+				<td><div id='yVal'>0</div></td>
+				<td><button onclick="moveSound(0,1,0);">move up</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="moveSound(0,0,-1);">move backward</button></td>
+				<td><div id='zVal'>0</div></td>
+				<td><button onclick="moveSound(0,0,1);">move forward</button></td>
+			</tr>
+		</table>
+	</body>
+</html>
