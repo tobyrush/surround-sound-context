@@ -74,5 +74,5 @@ Arrangements marked with an asterisk (*) are not standard arrangements... they'r
 - I'm also sure the API can be improved in lots of ways
 - Dolby Surround/DTS encoding support? (I'm assuming these are proprietary so probably not a chance)
   
-  
+Big thanks to u/dmack779 for inspiration and direction on this.
   
