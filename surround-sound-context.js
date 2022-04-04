@@ -25,12 +25,16 @@ class SurroundContext {
     }
   }
   
-  createSource() {
+  createSource(x=0, y=0, z=0) {
+    var s;
     if (this.useResourceAudio) {
-      return this.rctx.createSource();
+      s = this.rctx.createSource();
+      s.setPosition(x, y, z);
     } else {
-      return new SurroundSource(this.destGroup);
+      s = new SurroundSource(this.destGroup);
+      s.setPosition(x, y, z);
     }
+    return s;
   }
   
   guessSpeakerSetup(n,xx,yy,zz) {
